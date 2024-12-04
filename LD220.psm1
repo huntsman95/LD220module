@@ -104,7 +104,7 @@ function Clear-LD220Screen {
 }
 
 function Initialize-LD220Screen {
-    Send-LD220Command -Command ([byte[]]@(27, 64), 0, 2)
+    Send-LD220Command -Command ([byte[]]@(27, 64))
 }
 
 function Invoke-LD220Blink {
